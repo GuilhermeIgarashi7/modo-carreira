@@ -14,10 +14,48 @@
                 TextColor="#e0e0e0"
                 Margin="10"
                 FontSize="50"
+                FontFamily="SoccerLeague"
                 HorizontalOptions="Center"
                 HorizontalTextAlignment="Center"/>
 
-                
-        </Grid>
+        <VerticalStackLayout
+                VerticalOptions="End"
+                Spacing="10"
+                Margin="15,0,15,40">
 
+            <Button Text="Iniciar"
+                    BorderColor="White"
+                    BorderWidth="1"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    BackgroundColor="#8c8c8c"
+                    TextColor="White"
+                    Margin="0,0,0,10"
+                    FontSize="18"/>
+
+            <Button Text="Preferências"
+                    BorderColor="White"
+                    BorderWidth="1"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    BackgroundColor="#8c8c8c"
+                    TextColor="White"
+                    Margin="0,0,0,10"
+                    FontSize="18"/>
+
+            <Button Text="Sobre"
+                    BorderColor="White"
+                    BorderWidth="1"
+                    HeightRequest="50"
+                    CornerRadius="25"
+                    BackgroundColor="#8c8c8c"
+                    TextColor="White"
+                    Margin="0,0,0,10"
+                    FontSize="18"/>
+
+        </VerticalStackLayout>
+
+
+        </Grid>
+    
 </ContentPage>
