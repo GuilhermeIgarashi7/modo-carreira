@@ -1,6 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ModoCarreira.MainPage">
+             x:Class="ModoCarreira.MainPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Black">
+        
+        <Grid>
+         <Image Source="cr7.jpg"
+                Opacity=".6"
+                Aspect="AspectFill"/>
+
+         <Label Text="Modo Carreira"
+                TextColor="#e0e0e0"
+                Margin="10"
+                FontSize="50"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
+
+                
+        </Grid>
 
 </ContentPage>
