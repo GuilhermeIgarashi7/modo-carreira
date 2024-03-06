@@ -24,6 +24,7 @@
                 Margin="15,0,15,40">
 
             <Button Text="Iniciar"
+                    Clicked="OpenStart" 
                     BorderColor="White"
                     BorderWidth="1"
                     HeightRequest="50"
@@ -33,7 +34,8 @@
                     Margin="0,0,0,10"
                     FontSize="18"/>
 
-            <Button Text="Preferências"
+            <Button Text="Tutorial"
+                    
                     BorderColor="White"
                     BorderWidth="1"
                     HeightRequest="50"
@@ -44,6 +46,7 @@
                     FontSize="18"/>
 
             <Button Text="Sobre"
+                    
                     BorderColor="White"
                     BorderWidth="1"
                     HeightRequest="50"
@@ -55,7 +58,38 @@
 
         </VerticalStackLayout>
 
+<!--__________________________________________________________________________________
+TUTORIAL
+-->
+        <Frame x:Name="frameSettings"
+                IsVisible="false"
+                Margin="10"
+                BackgroundColor="#636363"
+                CornerRadius="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill">
 
-        </Grid>
-    
+     <Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="90"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Label  Text="Tutorial"
+                TextColor="White"
+                Margin="20"
+                FontSize="40"
+                FontFamily="KGHAPPY"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"/>
+
+        
+
+     </Grid>
+     </Frame>
+
+        
+      </Grid>
 </ContentPage>

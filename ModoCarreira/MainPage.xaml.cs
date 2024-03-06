@@ -8,6 +8,28 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
+	private void OpenStart(object sender, EventArgs args)
+
+		{
+			if (Application.Current !=null)
+		Application.Current.MainPage = new MCPage();
+		}
+		
 	
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
 
