@@ -35,7 +35,7 @@
                     FontSize="18"/>
 
             <Button Text="Tutorial"
-                    
+                    Clicked="OpenTutorial"
                     BorderColor="White"
                     BorderWidth="1"
                     HeightRequest="50"
@@ -46,7 +46,7 @@
                     FontSize="18"/>
 
             <Button Text="Sobre"
-                    
+                    Clicked="OpenAbout"
                     BorderColor="White"
                     BorderWidth="1"
                     HeightRequest="50"
@@ -61,7 +61,7 @@
 <!--__________________________________________________________________________________
 TUTORIAL
 -->
-        <Frame x:Name="frameSettings"
+        <Frame x:Name="frameTutorial"
                 IsVisible="false"
                 Margin="10"
                 BackgroundColor="#636363"
@@ -85,9 +85,53 @@ TUTORIAL
                 HorizontalTextAlignment="Center"
                 Grid.Row="0"/>
 
-        
+        <Button Text="Voltar"
+                Clicked="BackButton"
+                HeightRequest="50"
+                CornerRadius="25"
+                BackgroundColor="#878787"
+                Margin="0,0,0,10"
+                FontSize="18"
+                FontFamily="KGHAPPY"
+                Grid.Row="3"/>  
 
      </Grid>
+     </Frame>
+
+        <Frame x:Name="frameAbout"
+                IsVisible="false"
+                Margin="10"
+                BackgroundColor="#636363"
+                CornerRadius="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill">
+
+     <Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="90"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Label  Text="Sobre"
+                TextColor="White"
+                Margin="20"
+                FontSize="40"
+                FontFamily="KGHAPPY"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"/>
+
+        <Button Text="Voltar"
+                Clicked="BackAboutButton"
+                HeightRequest="50"
+                CornerRadius="25"
+                BackgroundColor="#878787"
+                Margin="0,0,0,10"
+                FontSize="18"
+                FontFamily="KGHAPPY"
+                Grid.Row="3"/>
+        </Grid>
      </Frame>
 
         
