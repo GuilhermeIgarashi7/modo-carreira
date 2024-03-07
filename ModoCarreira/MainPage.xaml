@@ -6,12 +6,13 @@
              BackgroundColor="Black">
         
         <Grid>
-         <Image Source="cr7.jpg"
-                Opacity=".6"
+         <Image Source="wallpaperbask.jpg"
+                Opacity=".8"
                 Aspect="AspectFill"/>
 
          <Label Text="Modo Carreira"
-                TextColor="#e0e0e0"
+                TextColor="Black"
+                FontAttributes="Bold"
                 Margin="10"
                 FontSize="50"
                 FontFamily="SoccerLeague"
@@ -25,36 +26,39 @@
 
             <Button Text="Iniciar"
                     Clicked="OpenStart" 
-                    BorderColor="White"
+                    BorderColor="Black"
                     BorderWidth="1"
                     HeightRequest="50"
                     CornerRadius="25"
-                    BackgroundColor="#8c8c8c"
-                    TextColor="White"
+                    BackgroundColor="#ffe291"
+                    TextColor="Black"
                     Margin="0,0,0,10"
-                    FontSize="18"/>
+                    FontSize="18"
+                    FontAttributes="Bold"/>
 
             <Button Text="Tutorial"
                     Clicked="OpenTutorial"
-                    BorderColor="White"
+                    BorderColor="Black"
                     BorderWidth="1"
                     HeightRequest="50"
                     CornerRadius="25"
-                    BackgroundColor="#8c8c8c"
-                    TextColor="White"
+                    BackgroundColor="#ffe291"
+                    TextColor="Black"
                     Margin="0,0,0,10"
-                    FontSize="18"/>
+                    FontSize="18"
+                    FontAttributes="Bold"/>
 
             <Button Text="Sobre"
                     Clicked="OpenAbout"
-                    BorderColor="White"
+                    BorderColor="Black"
                     BorderWidth="1"
                     HeightRequest="50"
                     CornerRadius="25"
-                    BackgroundColor="#8c8c8c"
-                    TextColor="White"
+                    BackgroundColor="#ffe291"
+                    TextColor="Black"
                     Margin="0,0,0,10"
-                    FontSize="18"/>
+                    FontSize="18"
+                    FontAttributes="Bold"/>
 
         </VerticalStackLayout>
 
@@ -64,20 +68,20 @@ TUTORIAL
         <Frame x:Name="frameTutorial"
                 IsVisible="false"
                 Margin="10"
-                BackgroundColor="#636363"
+                BackgroundColor="#ffd769"
                 CornerRadius="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Fill">
-
+     
      <Grid>
         <Grid.RowDefinitions>
         <RowDefinition Height="90"/>
         <RowDefinition Height="*"/>
         <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
-
+       
         <Label  Text="Tutorial"
-                TextColor="White"
+                TextColor="Black"
                 Margin="20"
                 FontSize="40"
                 FontFamily="KGHAPPY"
@@ -85,55 +89,77 @@ TUTORIAL
                 HorizontalTextAlignment="Center"
                 Grid.Row="0"/>
 
+     <ScrollView Grid.Row="1">
+
+        <Label Text="Um RPG de texto com ações pré-determinadas é um jogo de interpretação de personagens jogado principalmente por meio de mensagens de texto. Nele, os jogadores interagem com um narrador e entre si, escolhendo opções predefinidas fornecidas pelo sistema do jogo. Essas opções podem incluir diálogos, escolhas de caminho e decisões estratégicas. Os jogadores então respondem selecionando as opções disponíveis, o que influencia o desenvolvimento da história. Essa forma de RPG ainda valoriza a narrativa e o desenvolvimento de personagens, mas oferece uma estrutura mais guiada para a jogabilidade. Para você conseguir jogar apenas escolha as opções certas."
+                CharacterSpacing="1"
+                LineHeight="1.5"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="20"/>
+      
+      </ScrollView>
+
+
+
+
         <Button Text="Voltar"
                 Clicked="BackButton"
                 HeightRequest="50"
                 CornerRadius="25"
-                BackgroundColor="#878787"
+                BackgroundColor="#ffbc00"
                 Margin="0,0,0,10"
                 FontSize="18"
                 FontFamily="KGHAPPY"
-                Grid.Row="3"/>  
-
+                Grid.Row="2"/>  
+       
      </Grid>
      </Frame>
 
         <Frame x:Name="frameAbout"
                 IsVisible="false"
                 Margin="10"
-                BackgroundColor="#636363"
+                BackgroundColor="#ffd769"
                 CornerRadius="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Fill">
 
-     <Grid>
-        <Grid.RowDefinitions>
-        <RowDefinition Height="90"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="60"/>
-        </Grid.RowDefinitions>
+        <Grid>
+                <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
 
-        <Label  Text="Sobre"
-                TextColor="White"
-                Margin="20"
-                FontSize="40"
-                FontFamily="KGHAPPY"
-                HorizontalOptions="Center"
-                HorizontalTextAlignment="Center"
-                Grid.Row="0"/>
+                <Label  Text="Sobre"
+                        TextColor="Black"
+                        Margin="20"
+                        FontSize="40"
+                        FontFamily="KGHAPPY"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Grid.Row="0"/>
 
-        <Button Text="Voltar"
-                Clicked="BackAboutButton"
-                HeightRequest="50"
-                CornerRadius="25"
-                BackgroundColor="#878787"
-                Margin="0,0,0,10"
-                FontSize="18"
-                FontFamily="KGHAPPY"
-                Grid.Row="3"/>
+                <Label Text="Aplicativo criado por Guilherme Igarashi e Matheus Venancio, O jogo é um rpg de um modo carreira de Basquete onde você pode escolher seus times e também fazer algumas decisões importantes para mudar sua carreira tanto para o bem quanto para o mal, jogue e divirta-se."
+                        CharacterSpacing="1"
+                        LineHeight="1.5"
+                        TextColor="Black"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        FontSize="20"
+                        Grid.Row="1"/>
+
+                <Button Text="Voltar"
+                        Clicked="BackAboutButton"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        BackgroundColor="#ffbc00"
+                        Margin="0,20,0,10"
+                        FontSize="18"
+                        FontFamily="KGHAPPY"
+                        Grid.Row="2"/>
         </Grid>
-     </Frame>
-
-        
-      </Grid>
+      </Frame> 
+   </Grid>
 </ContentPage>

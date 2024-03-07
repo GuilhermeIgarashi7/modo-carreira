@@ -5,4 +5,19 @@
              Shell.NavBarIsVisible="False"
              BackgroundColor="Black">
 
+    <Grid>
+     <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="60"/>
+      <RowDefinition Height="60"/>
+      <RowDefinition Height="60"/>
+      <RowDefinition Height="60"/>
+      </Grid.RowDefinitions>
+
+      
+
+
+
+
+    </Grid>
 </ContentPage>
