@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ModoCarreira.MCPage"
              Shell.NavBarIsVisible="False"
-             BackgroundColor="Black">
+             BackgroundColor="#ffc933">
 
-    <Grid>
+  <Grid>
      <Grid.RowDefinitions>
       <RowDefinition Height="*"/>
       <RowDefinition Height="60"/>
@@ -13,11 +13,27 @@
       <RowDefinition Height="60"/>
       <RowDefinition Height="60"/>
       </Grid.RowDefinitions>
+    
+  <Frame 
+        BackgroundColor="#ffe291"
+        CornerRadius="30"
+        Margin="5,10,5,0"
+        VerticalOptions="Fill"
+        Grid.Row="0">
+    
+    <Label 
+        Text="Oisabdbakdbsajkbdsbadjksbadbsjkabdksbadbsajdbsjkabdjlsabdjksabsjka"   
+        TextColor="Black"
+        LineHeight="1.2"
+        HorizontalOptions="Center"
+        VerticalOptions="Start"
+        FontSize="20"
+        FontFamily="CaviarDreams_BoldItalic"/>
 
-      
+
+  </Frame>
 
 
 
-
-    </Grid>
+  </Grid>
 </ContentPage>
