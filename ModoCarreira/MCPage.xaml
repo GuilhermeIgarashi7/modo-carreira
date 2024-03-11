@@ -5,48 +5,136 @@
              Shell.NavBarIsVisible="False"
              BackgroundColor="#ffc933">
 
-  <Grid>
-     <Grid.RowDefinitions>
-      <RowDefinition Height="*"/>
-      <RowDefinition Height="60"/>
-      <RowDefinition Height="60"/>
-      <RowDefinition Height="60"/>
-      <RowDefinition Height="60"/>
-      </Grid.RowDefinitions>
+      <Grid>
+      <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
     
-  <Frame 
-        BackgroundColor="#ffe291" 
-        CornerRadius="30"
-        Margin="5,10,5,0"
-        VerticalOptions="Fill"
-        Grid.Row="0">
-    
-    <Label   
-        TextColor="Black"
-        LineHeight="1.2"
-        HorizontalOptions="Center"
-        VerticalOptions="Start"
-        FontSize="20"
-        FontFamily="CaviarDreams_BoldItalic"/>
-  </Frame>
-  <Button
-        Text="Próximo"
-        BackgroundColor="#ffe291"
-        BorderWidth="1.5"
-        BorderColor="Black"
-        Margin="10,5"
-        TextColor="Black"
-        FontSize="20"
-        HeightRequest="50"
-        CornerRadius="30"
-        HorizontalOptions="Fill"
-        Grid.Row="1"/>
-    
+            <Frame 
+                  BackgroundColor="#ffe291" 
+                  CornerRadius="30"
+                  Margin="5,10,5,0"
+                  VerticalOptions="Fill"
+                  Grid.Row="0">
+            
+            <Label   
+                  TextColor="Black"
+                  LineHeight="1.2"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Start"
+                  FontSize="20"
+                  FontFamily="CaviarDreams_BoldItalic"/>
+            </Frame>
+
+            <Button x:Name="NextStep"
+                  Text="Próximo"
+                  BackgroundColor="#ffe291"
+                  BorderWidth="1.5"
+                  BorderColor="Black"
+                  Margin="10,5"
+                  TextColor="Black"
+                  FontSize="20"
+                  FontAttributes="Bold"
+                  HeightRequest="50"
+                  CornerRadius="30"
+                  HorizontalOptions="Fill"
+                  Grid.Row="1"/>
+
+            <Button x:Name="FirstOption"
+                    BackgroundColor="#ffe291"
+                    Margin="5"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="1.5"
+                    HeightRequest="50"
+                    CornerRadius="15"
+                    HorizontalOptions="Fill"
+                    Grid.Row="2"/>
+
+            <Button x:Name="SecondOption"
+                    BackgroundColor="#ffe291"
+                    Margin="5"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="1.5"
+                    HeightRequest="50"
+                    CornerRadius="15"
+                    HorizontalOptions="Fill"
+                    Grid.Row="3"/>
+
+            <Button x:Name="ThirdOption"
+                    BackgroundColor="#ffe291"
+                    Margin="5"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="1.5"
+                    HeightRequest="50"
+                    CornerRadius="15"
+                    HorizontalOptions="Fill"
+                    Grid.Row="4"/>
+
+        <Frame x:Name="frameYouLost"
+                IsVisible="false"
+                Margin="10"
+                BackgroundColor="#ffd769"
+                CornerRadius="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill">
+     
+     <Grid>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="90"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+       
+        <Label  Text="Você Perdeu"
+                TextColor="Black"
+                Margin="20"
+                FontSize="40"
+                FontFamily="KGHAPPY"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"/>
+
+     <ScrollView Grid.Row="1">
+
+        <Label Text="Essa pode não ter sido a melhor escolha a se fazer...Aprenda com os seus erros e melhore, nunca é o fim."
+                CharacterSpacing="1"
+                LineHeight="1.5"
+                TextColor="Black"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="20"/>
+      
+      </ScrollView>
+
+
+
+
+        <Button Text="Tentar de Novo"
+                Clicked="TryAgain"
+                HeightRequest="50"
+                CornerRadius="25"
+                BackgroundColor="#ffbc00"
+                Margin="0,0,0,10"
+                FontSize="18"
+                FontFamily="KGHAPPY"
+                Grid.Row="2"/>  
+       
+     </Grid>
+     </Frame>
+            
+          
 
 
 
 
 
 
-  </Grid>
+      </Grid>
 </ContentPage>

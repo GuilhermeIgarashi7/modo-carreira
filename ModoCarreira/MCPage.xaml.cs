@@ -7,4 +7,12 @@ public partial class MCPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private void TryAgain(object sender, EventArgs args)
+
+		{
+			if (Application.Current !=null)
+		Application.Current.MainPage = new MainPage();
+		}
+
 }
