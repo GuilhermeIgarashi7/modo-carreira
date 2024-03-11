@@ -77,57 +77,54 @@
                     HorizontalOptions="Fill"
                     Grid.Row="4"/>
 
-        <Frame x:Name="frameYouLost"
-                IsVisible="false"
-                Margin="10"
-                BackgroundColor="#ffd769"
-                CornerRadius="20"
-                HorizontalOptions="Fill"
-                VerticalOptions="Fill">
-     
-     <Grid>
-        <Grid.RowDefinitions>
-        <RowDefinition Height="90"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="60"/>
-        </Grid.RowDefinitions>
-       
-        <Label  Text="Você Perdeu"
-                TextColor="Black"
-                Margin="20"
-                FontSize="40"
-                FontFamily="KGHAPPY"
-                HorizontalOptions="Center"
-                HorizontalTextAlignment="Center"
-                Grid.Row="0"/>
-
-     <ScrollView Grid.Row="1">
-
-        <Label Text="Essa pode não ter sido a melhor escolha a se fazer...Aprenda com os seus erros e melhore, nunca é o fim."
-                CharacterSpacing="1"
-                LineHeight="1.5"
-                TextColor="Black"
-                HorizontalOptions="Center"
-                HorizontalTextAlignment="Center"
-                FontSize="20"/>
+            <Frame x:Name="frameYouLost"
+                  IsVisible="false"
+                  Margin="10"
+                  BackgroundColor="#ffd769"
+                  CornerRadius="20"
+                  HorizontalOptions="Fill"
+                  VerticalOptions="Fill">
       
-      </ScrollView>
+            <Grid>
+                  <Grid.RowDefinitions>
+                  <RowDefinition Height="90"/>
+                  <RowDefinition Height="*"/>
+                  <RowDefinition Height="60"/>
+                  </Grid.RowDefinitions>
+                  
+                  <Label  Text="Você Perdeu"
+                        TextColor="Black"
+                        Margin="20"
+                        FontSize="40"
+                        FontFamily="KGHAPPY"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Grid.Row="0"/>
 
+            <ScrollView Grid.Row="1">
 
+                  <Label Text="Essa pode não ter sido a melhor escolha a se fazer...Aprenda com os seus erros e melhore, nunca é o fim."
+                        CharacterSpacing="1"
+                        LineHeight="1.5"
+                        TextColor="Black"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        FontSize="20"/>
+                  
+            </ScrollView>
 
-
-        <Button Text="Tentar de Novo"
-                Clicked="TryAgain"
-                HeightRequest="50"
-                CornerRadius="25"
-                BackgroundColor="#ffbc00"
-                Margin="0,0,0,10"
-                FontSize="18"
-                FontFamily="KGHAPPY"
-                Grid.Row="2"/>  
-       
-     </Grid>
-     </Frame>
+                  <Button Text="Tentar de Novo"
+                        Clicked="TryAgain"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        BackgroundColor="#ffbc00"
+                        Margin="0,0,0,10"
+                        FontSize="18"
+                        FontFamily="KGHAPPY"
+                        Grid.Row="2"/>  
+            
+            </Grid>
+            </Frame>
             
           
 
