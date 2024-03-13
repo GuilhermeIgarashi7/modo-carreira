@@ -22,6 +22,7 @@
                   Grid.Row="0">
             
             <Label   
+                  x:Name="labelTexto"
                   TextColor="Black"
                   LineHeight="1.2"
                   HorizontalOptions="Center"
@@ -31,6 +32,7 @@
             </Frame>
 
             <Button x:Name="NextStep"
+                  Clicked="NextStepClicked"
                   Text="Próximo"
                   BackgroundColor="#ffe291"
                   BorderWidth="1.5"
