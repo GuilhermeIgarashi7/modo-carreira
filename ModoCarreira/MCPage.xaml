@@ -47,6 +47,7 @@
                   Grid.Row="1"/>
 
             <Button x:Name="FirstOption"
+                    Clicked="FirstOptionClicked"
                     BackgroundColor="#ffe291"
                     Margin="5"
                     TextColor="Black"
@@ -58,6 +59,7 @@
                     Grid.Row="2"/>
 
             <Button x:Name="SecondOption"
+                    Clicked="SecondOptionOptionClicked"
                     BackgroundColor="#ffe291"
                     Margin="5"
                     TextColor="Black"
@@ -69,6 +71,7 @@
                     Grid.Row="3"/>
 
             <Button x:Name="ThirdOption"
+                    Clicked="ThirdOptionOptionClicked"
                     BackgroundColor="#ffe291"
                     Margin="5"
                     TextColor="Black"
