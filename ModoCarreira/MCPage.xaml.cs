@@ -62,20 +62,45 @@ public partial class MCPage : ContentPage
 			Texto ="Parabéns! fez uma partida incrivel com 28 pontos 7 assistencias e 4 roubos de bolas",
 			TemResposta = false,
 		 });
-		carreira.Add(new CareerStep()
+		 carreira.Add(new CareerStep()
 		 {
 			Id = 5,
-			Texto ="Mesmo não jogando seu máximo você fez 10 pontos 3 assistencias e 1 roubo de bola",
+			Texto ="Você fez  uma sequencia incrivel de 5 partidas com mais de 20 pontos, 10 assistncia e 5 roubos de bola !",
+			TemResposta = false,
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 6,
+			Texto ="Você fez  uma sequencia incrivel de 5 partidas com mais de 20 pontos, 10 assistncia e 5 roubos de bola ",
+			TemResposta = false,
+		 });
+		carreira.Add(new CareerStep()
+		 {
+			Id = 7,
+			Texto =" Seu time esta na final da liga contra os Los Angeles Clippers o jogo esta 127 a 125 e você recebe a bola faltando 5 segundos para o fim do jogo você",
+			TemResposta = true,
+			TextodaResposta1 = "Tenta uma bola de 3 pontos do meio da quadra",
+			TextodaResposta2 = "Faz o passe para seu colega que esta melhor posicionado",
+			TextodaResposta3 = "Infiltra e tenta uma bandeja para levar o jogo para a prorrogação",
+			IdLevelResposta1 = 1001,
+			IdLevelResposta2 = 8,
+			IdLevelResposta3 = 69,
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 8,
+			Texto ="Seu colega faz a cesta e seu time é campeão",
 			TemResposta = false,
 		 });
 
-		carreira.Add(new CareerStep()
-		 {
-			Id = 1000,
-			Texto =" Você foi demitido",
-			TemResposta = false,
-			YouLost = true,
-		 });
+
+
+
+		 
+
+
+
+
 
 
 		Iniciar();
