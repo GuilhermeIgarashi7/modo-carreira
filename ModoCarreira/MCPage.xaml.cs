@@ -68,31 +68,69 @@ public partial class MCPage : ContentPage
 			Texto ="Você fez  uma sequencia incrivel de 5 partidas com mais de 20 pontos, 10 assistncia e 5 roubos de bola !",
 			TemResposta = false,
 		 });
-		 carreira.Add(new CareerStep()
-		 {
-			Id = 6,
-			Texto ="Você fez  uma sequencia incrivel de 5 partidas com mais de 20 pontos, 10 assistncia e 5 roubos de bola ",
-			TemResposta = false,
-		 });
 		carreira.Add(new CareerStep()
 		 {
-			Id = 7,
+			Id = 6,
 			Texto =" Seu time esta na final da liga contra os Los Angeles Clippers o jogo esta 127 a 125 e você recebe a bola faltando 5 segundos para o fim do jogo você",
 			TemResposta = true,
 			TextodaResposta1 = "Tenta uma bola de 3 pontos do meio da quadra",
 			TextodaResposta2 = "Faz o passe para seu colega que esta melhor posicionado",
 			TextodaResposta3 = "Infiltra e tenta uma bandeja para levar o jogo para a prorrogação",
 			IdLevelResposta1 = 1001,
-			IdLevelResposta2 = 8,
+			IdLevelResposta2 = 7,
 			IdLevelResposta3 = 69,
 		 });
 		 carreira.Add(new CareerStep()
 		 {
-			Id = 8,
+			Id = 7,
 			Texto ="Seu colega faz a cesta e seu time é campeão. Bom trabalho !",
 			TemResposta = false,
 			YouWin = true,
 		 });
+
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 50,
+			Texto ="Mesmo não jogando seu máximo você fez 10 pontos 3 assistencias e 1 roubo de bola e seu time ganhou",
+			TemResposta = false,
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 51,
+			Texto ="Você fez uma sequencia mediana de 7 partidas com mais de 10 pontos, 5 assistencia e 2 roubos de bola",
+			TemResposta = false,
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 52,
+			Texto ="Seu time foi para as semi-finais da temporada contra o Dallas Mavericks",
+			TemResposta = false,
+
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 53,
+			Texto ="O jogo esta no terceiro quarto aos 01:25 do jogo e você esta no banco e o técnico decide coloca-lo com seu time ganhando de 101 a 95, mas por ser. Entretanto você está muito nervoso e acaba sendo expulso do jogo por cometer mais de 5 faltas individuais",
+			TemResposta = false,
+
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 54,
+			Texto ="Seu time acaba sofrendo uma virada historia e o jogo vai para a prorrogação com o jogo 130 a 130. O técnico olha para você e te dá outra chance de mudar a historia do jogo. O que você faz ? ",
+			TemResposta = true,
+			TextodaResposta1 ="Entro no jogo ",
+			TextodaResposta2 ="Falo que é melhor eu não entrar e reconhecer que esta meio nervoso",
+			IdLevelResposta1 = 55,
+			IdLevelResposta2 = 1002,
+
+
+		 });
+
+
+
+
+
 		 carreira.Add(new CareerStep()
 		 {
 			Id = 1000,
@@ -104,6 +142,13 @@ public partial class MCPage : ContentPage
 		 {
 			Id = 1001,
 			Texto ="Você erra a bola e seu time perdeu",
+			TemResposta = false,
+			YouLost = true,
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 1002,
+			Texto ="Seu time nao se classificou para as finais tenta na temporada seguinte",
 			TemResposta = false,
 			YouLost = true,
 		 });
@@ -146,10 +191,6 @@ public partial class MCPage : ContentPage
 		else
 		 frameYouLost.IsVisible = false;
 
-		if (CareerStepAtual.YouWin)
-		 frameYouWin.IsVisible = true;
-		else
-		 frameYouWin.IsVisible = false;
 	
 
 		if (CareerStepAtual.TemResposta)
@@ -162,6 +203,20 @@ public partial class MCPage : ContentPage
 			SecondOption.Text = CareerStepAtual.TextodaResposta2;
 			ThirdOption.Text = CareerStepAtual.TextodaResposta3;
 
+				if(FirstOption.Text =="")
+                    FirstOption.IsVisible = false;
+                else
+                    FirstOption.IsVisible = true;
+
+                if(SecondOption.Text =="")
+                    SecondOption.IsVisible = false;
+                else
+                    SecondOption.IsVisible = true;
+
+                if(ThirdOption.Text =="")
+                    ThirdOption.IsVisible = false;
+                else
+                    ThirdOption.IsVisible = true;
 		}
 		else
 		{

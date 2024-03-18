@@ -97,7 +97,7 @@
                   <RowDefinition Height="60"/>
                   </Grid.RowDefinitions>
                   
-                  <Label  Text="Você Perdeu"
+                  <Label  Text="Derrota"
                         TextColor="Black"
                         Margin="20"
                         FontSize="40"
@@ -131,45 +131,6 @@
             </Grid>
             </Frame>
 
-                 <Label  Text="You Win !!!"
-                        TextColor="Black"
-                        Margin="20"
-                        FontSize="40"
-                        FontFamily="KGHAPPY"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        Grid.Row="0"/>
-
-            <ScrollView Grid.Row="1">
-
-                  <Label Text="Parabéns ! Você foi o MVP da temporada, todo o seu esforço e trabalho duro valeram a pena, Parabéns pela disciplina e pelo seu foco, esperamos você em mais temporadas. Quem sabe você não se torna o GOAT né ? :)"
-                        CharacterSpacing="1"
-                        LineHeight="1.5"
-                        TextColor="Black"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        FontSize="20"/>
-                  
-            </ScrollView>
-
-                  <Button Text="Voltar para o Início"
-                        Clicked="TryAgain"
-                        HeightRequest="50"
-                        CornerRadius="25"
-                        BackgroundColor="#ffbc00"
-                        Margin="0,0,0,10"
-                        FontSize="18"
-                        FontFamily="KGHAPPY"
-                        Grid.Row="2"/>  
-            
-            </Grid>
-            </Frame>
-          
-
-
-
-
-
-
+ 
       </Grid>
 </ContentPage>
