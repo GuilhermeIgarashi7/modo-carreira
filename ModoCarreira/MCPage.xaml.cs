@@ -52,7 +52,7 @@ public partial class MCPage : ContentPage
 			TextodaResposta2 = "Entro e não faço muita coisa porém o time ganha",
 			TextodaResposta3 = "Me recuso a entrar e repito a fala dele",
 			IdLevelResposta1 = 4,
-			IdLevelResposta2 = 5,
+			IdLevelResposta2 = 50,
 			IdLevelResposta3 = 1000,
 		 });
 
@@ -91,7 +91,24 @@ public partial class MCPage : ContentPage
 			Id = 8,
 			Texto ="Seu colega faz a cesta e seu time é campeão. Bom trabalho !",
 			TemResposta = false,
+			YouWin = true,
 		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 1000,
+			Texto ="Você foi demitido",
+			TemResposta = false,
+			YouLost = true,
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 1001,
+			Texto ="Você erra a bola e seu time perdeu",
+			TemResposta = false,
+			YouLost = true,
+		 });
+
+		
 
 
 
