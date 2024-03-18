@@ -89,7 +89,7 @@ public partial class MCPage : ContentPage
 		 carreira.Add(new CareerStep()
 		 {
 			Id = 8,
-			Texto ="Seu colega faz a cesta e seu time é campeão",
+			Texto ="Seu colega faz a cesta e seu time é campeão. Bom trabalho !",
 			TemResposta = false,
 		 });
 
@@ -128,6 +128,11 @@ public partial class MCPage : ContentPage
 		 frameYouLost.IsVisible = true;
 		else
 		 frameYouLost.IsVisible = false;
+
+		if (CareerStepAtual.YouWin)
+		 frameYouWin.IsVisible = true;
+		else
+		 frameYouWin.IsVisible = false;
 	
 
 		if (CareerStepAtual.TemResposta)

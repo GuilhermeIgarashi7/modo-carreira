@@ -142,7 +142,7 @@
 
             <ScrollView Grid.Row="1">
 
-                  <Label Text="Essa pode não ter sido a melhor escolha a se fazer...Aprenda com os seus erros e melhore, nunca é o fim."
+                  <Label Text="Parabéns ! Você foi o MVP da temporada, todo o seu esforço e trabalho duro valeram a pena, Parabéns pela disciplina e pelo seu foco, esperamos você em mais temporadas. Quem sabe você não se torna o GOAT né ? :)"
                         CharacterSpacing="1"
                         LineHeight="1.5"
                         TextColor="Black"
@@ -152,7 +152,7 @@
                   
             </ScrollView>
 
-                  <Button Text="Tentar de Novo"
+                  <Button Text="Voltar para o Início"
                         Clicked="TryAgain"
                         HeightRequest="50"
                         CornerRadius="25"

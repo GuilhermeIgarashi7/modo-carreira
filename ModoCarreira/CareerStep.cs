@@ -20,4 +20,7 @@ public class CareerStep
 	public int IdLevelResposta3;
 
 	public bool YouLost = false;
+
+	public bool YouWin = false;
+	
 }
