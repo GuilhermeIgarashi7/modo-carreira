@@ -121,12 +121,43 @@ public partial class MCPage : ContentPage
 			TemResposta = true,
 			TextodaResposta1 ="Entro no jogo ",
 			TextodaResposta2 ="Falo que é melhor eu não entrar e reconhecer que esta meio nervoso",
+			TextodaResposta3 ="",
 			IdLevelResposta1 = 55,
 			IdLevelResposta2 = 1002,
-
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 55,
+			Texto ="Você jogou muito bem a prorrogação e seu time foi para as finais",
+			TemResposta = false,
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 56,
+			Texto ="O técnico decidiu te colocar como titular em um jogo contra os Los Angeles Lakers",
+			TemResposta = true,
 
 		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 57,
+			Texto ="O jogo esta muito intenso e seu time esta perdendo de 120 a 118, os 2 times já estouraram as faltas e faltando 07 segundos para o jogo acabar você recebe a bola na lateral e de costas para a cesta, o que você faz?",
+			TemResposta = true,
+			TextodaResposta1 = "Arremesso para fazer uma cesta 2 pontos e cavar uma falta ",
+			TextodaResposta2 = "Giro no meu marcador e arremesso de 3 pontos ",
+			TextodaResposta3 = "Tento uma ponte aérea para o pivo que esta chegando",
+			IdLevelResposta1 = 1003,
+			IdLevelResposta2 = 58,
+			IdLevelResposta3 = 1004,
 
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 58,
+			Texto ="MINHA NOSSA !!! QUE JOGADA INCRÍVEL. Depois dessa cesta o seu time ganha com o relógio estourando. Meus parabéns !",
+			TemResposta = true,
+
+		 });
 
 
 
@@ -152,13 +183,32 @@ public partial class MCPage : ContentPage
 			TemResposta = false,
 			YouLost = true,
 		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 1003,
+			Texto ="Você toma o toco mais humilhante da sua vida e seu time perde",
+			TemResposta = false,
+			YouLost = true,
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 1003,
+			Texto ="Você toma o toco mais humilhante da sua vida e seu time perde",
+			TemResposta = false,
+			YouLost = true,
+		 });
+		 carreira.Add(new CareerStep()
+		 {
+			Id = 1004,
+			Texto ="Você deu uma passe horrível e a bola foi para fora seu time perdeu!",
+			TemResposta = false,
+			YouLost = true,
+		 });
+
 
 		
 
 
-
-
-		 
 
 
 
